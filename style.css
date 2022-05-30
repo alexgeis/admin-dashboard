@@ -3,6 +3,10 @@
     --primary-light: rgb(255, 255, 255);
 }
 
+* {
+    box-sizing: border-box;
+}
+
 body, html {
     height: 100%;
     margin: 0;
@@ -13,7 +17,7 @@ body, html {
     grid-template: 1fr 4fr / 1fr 4fr;
     height: 100%;
     padding: 16px;
-    box-sizing: border-box;
+   
 }
 
 .header {
@@ -24,6 +28,10 @@ body, html {
 .dashboard {
     background-color: brown;
     grid-row: 1 / 4;
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    padding: 10px;
+
 }
 
 .main-content {
@@ -32,7 +40,7 @@ body, html {
 
 
 
-.dashboard-logo {
+.dash-logo-wrapper {
     display: grid;
     grid-template-columns: repeat(6, 5px);
     grid-template-rows: repeat(6, 5px);
@@ -45,16 +53,26 @@ body, html {
       "a a a d d d"
       "c c c d d d"
       "c c c d d d";
-  }
-  .item1 {
-    grid-area: a;
-  }
-  .item2 {
-    grid-area: b;
-  }
-  .item3 {
-    grid-area: c;
-  }
-  .item4 {
-    grid-area: d;
-  }
+}
+
+.dash-logo-wrapper>div {
+    background-color: var(--primary-light);
+}
+.item1 {
+grid-area: a;
+}
+.item2 {
+grid-area: b;
+}
+.item3 {
+grid-area: c;
+}
+.item4 {
+grid-area: d;
+}
+
+
+.logo {
+    width: 30px;
+    height: 30px;
+}
