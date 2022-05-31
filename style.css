@@ -1,5 +1,5 @@
 :root {
-    --primary-dark: #8b5cf6;
+    --primary-dark: rgb(139, 92, 246);
     --primary-light: #ffffff;
     --secondary-light: #ddd6fe;
 }
@@ -12,7 +12,11 @@ body, html {
     height: 100%;
     margin: 0;
     font-family: 'Plus Jakarta Sans', sans-serif;
-  }
+}
+
+h1,h2,h3,h4,h5,h6,p {
+margin: 0;
+}
 
 .container {
     display:grid;
@@ -204,27 +208,40 @@ CONTENT SECTION
     display: grid;
 }
 
-.sidebar-announcements {
 
+
+.sidebar-announcements,
+.sidebar-trending {
+    background-color: var(--primary-light);
+    display:grid;
+    grid-template-rows: repeat(3, minmax(80px,100px));
+    border-radius: 15px;
+    max-width: 100%;
+    max-height: 30vh;
+    padding: 10px;
 }
 
-.announcement {
-
+.announcement,
+.trend {
+    max-height: 100%;
+    /* white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis; */
 }
+.announcement>h4,
+.trend-user {
+    font-size: .9rem;
+}
+.announcement>p,
+.trend-desc {
+    font-size: .7rem;
+}
+.announcement>hr {
+    border: rgba(139, 92, 246,0.2) 1px solid;
+}
+
 
 .sidebar-trending {
-
-}
-
-.trend {
-
-}
-
-.trend-user {
-
-}
-
-.trend-desc {
 
 }
 
