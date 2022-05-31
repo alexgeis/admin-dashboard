@@ -1,5 +1,7 @@
 # Admin Dashboard
 
-An exmaple of a standard admin dashboard created with CSS Grid.
+An example of a standard admin dashboard created with CSS Grid.
 
-Currenty WIP - dashboard is complete.
+[Deployed Link](https://alexgeis.github.io/admin-dashboard/) &larr;&larr;
+
+![Admin Dashboard Screenshot](./assets/logos/admin-dashboard-screenshot.png)
