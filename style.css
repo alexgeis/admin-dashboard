@@ -187,7 +187,6 @@ CONTENT SECTION
     display: grid;
     grid-template: 50px 1fr / 3fr 1fr;
     gap: 15px;
-    border: #8b5cf6 2px solid;
     padding: 1rem 3rem;
 }
 
@@ -195,10 +194,37 @@ CONTENT SECTION
     display: grid;
     align-items: end;
 }
-
+/* CARDS */
 .card-container {
     display: grid;
 }
+
+/* SIDEBAR */
 .sidebar-right {
     display: grid;
 }
+
+.sidebar-announcements {
+
+}
+
+.announcement {
+
+}
+
+.sidebar-trending {
+
+}
+
+.trend {
+
+}
+
+.trend-user {
+
+}
+
+.trend-desc {
+
+}
+
