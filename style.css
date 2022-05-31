@@ -36,12 +36,18 @@ HEADER SECTION
     padding: 2rem;
 }
 
-.header-top {
+.header-top,
+.header-bottom {
     display: grid;
-    grid-template-columns: 24px minmax(200px,1fr);
     grid-auto-flow: column;
     gap: 15px;
     align-items: center;
+}
+.header-top {
+    grid-template-columns: 24px minmax(200px,1fr);
+}
+.header-bottom {
+    grid-template-columns: 70px minmax(200px,1fr);
 }
 
 #search-input {
@@ -53,6 +59,11 @@ HEADER SECTION
 .small-avatar {
     width: 30px;
     height: 30px;
+    border-radius: 15px;
+}
+.large-avatar {
+    width: 60px;
+    height: 60px;
     border-radius: 15px;
 }
 /* ~~
