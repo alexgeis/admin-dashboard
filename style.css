@@ -197,6 +197,7 @@ CONTENT SECTION
 .content-header {
     display: grid;
     align-items: end;
+    padding-bottom: 8px;
 }
 /* CARDS */
 .card-container {
