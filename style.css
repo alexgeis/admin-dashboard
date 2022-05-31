@@ -83,6 +83,10 @@ HEADER SECTION
     padding: 10px 30px;
     border-radius: 20px;
 }
+.btn:hover {
+    /* background-color: var(--secondary-light); */
+    font-size: 105%;
+}
 /* ~~
 DASHBOARD SECTION
 ~~ */
