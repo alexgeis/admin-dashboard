@@ -1,6 +1,6 @@
 :root {
     --primary-dark: #8b5cf6;
-    --primary-light: white;
+    --primary-light: #ffffff;
     --secondary-light: #ddd6fe;
 }
 
@@ -36,7 +36,8 @@ body, html {
     grid-row: 1 / 4;
     display: grid;
     grid-template-columns: 1fr 3fr;
-    grid-template-rows: repeat(16, 1fr);
+    grid-template-rows: repeat(12, 50px);
+    column-gap: 12px;
     padding: 10px;
     grid-template-areas:
         "dashL dash"
@@ -53,21 +54,25 @@ body, html {
         "privacyL privacy"
 }
 
-
+.dash-head {
+    align-items: center;
+}
 
 .dash-logo-wrapper {
     display: grid;
-    grid-template-columns: repeat(6, 5px);
+    grid-template-columns: repeat(6, 4px);
     grid-template-rows: repeat(6, 5px);
     height: 30px;
-    width: 30px;
+    width: 24px;
     gap: 2px;
+    z-index: 100;
     grid-template-areas:
       "a a a b b b"
       "a a a b b b"
       "a a a d d d"
       "c c c d d d"
       "c c c d d d";
+    margin: 0 auto;
 }
 
 .dash-logo-wrapper>div {
@@ -86,12 +91,36 @@ grid-area: c;
 grid-area: d;
 }
 
-
-.logo {
-    width: 30px;
-    height: 30px;
+.dash-title {
+    font-size: 1.8rem;
 }
 
+.logo {
+    width: 20px;
+    height: 20px;
+    margin: 0 auto;
+    /* change svg color to white */
+    filter: invert(100%) sepia(0%) saturate(7500%) hue-rotate(113deg) brightness(110%) contrast(101%)
+}
+
+.home {grid-area:home}
+.home-logo {grid-area:homeL}
+.profile {grid-area:profile}
+.profile-logo {grid-area:profileL}
+.messages {grid-area:messages}
+.messages-logo {grid-area:messagesL}
+.history {grid-area:history}
+.history-logo {grid-area:historyL}
+.tasks {grid-area:tasks}
+.tasks-logo {grid-area:tasksL}
+.communities {grid-area:communities}
+.communities-logo {grid-area:communitiesL}
+.settings {grid-area:settings}
+.settings-logo {grid-area:settingsL}
+.support {grid-area:support}
+.support-logo {grid-area:supportL}
+.privacy {grid-area:privacy}
+.privacy-logo {grid-area:privacyL}
 
 .main-content {
     background-color: var(--secondary-light);
