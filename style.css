@@ -217,6 +217,11 @@ CONTENT SECTION
     box-shadow: 2px 2px 2px rgba(0,0,0,0.2);
     border-left: var(--primary-dark) 8px solid;
     padding: 10px;
+    display: grid;
+    /* grid-template-rows: 10px 1fr; */
+    /* grid-auto-flow: column; */
+    /* gap: 15px; */
+    /* align-items: center; */
 }
 .project-title {
     font-size: 1.2rem;
@@ -226,13 +231,10 @@ CONTENT SECTION
 .project-desc {
     font-size: .9rem;
 }
-
-
-
-
-
-
-
+.project-btns {
+    padding: 10px 10px 0;
+    justify-self: end;
+}
 
 /* SIDEBAR */
 .sidebar-right {
