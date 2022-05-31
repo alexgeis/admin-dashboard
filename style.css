@@ -216,6 +216,15 @@ CONTENT SECTION
     border-radius: 10px;
     box-shadow: 2px 2px 2px rgba(0,0,0,0.2);
     border-left: var(--primary-dark) 8px solid;
+    padding: 10px;
+}
+.project-title {
+    font-size: 1.2rem;
+    font-weight: bold;
+    padding-bottom: 5px;
+}
+.project-desc {
+    font-size: .9rem;
 }
 
 
@@ -253,16 +262,13 @@ CONTENT SECTION
 .announcement>h4,
 .trend-user {
     font-size: .9rem;
+    font-weight: bold;
 }
 .announcement>p,
 .trend-desc {
     font-size: .7rem;
     width: 25ch;
 }
-.announcement>hr {
-    border: rgba(139, 92, 246,0.2) 1px solid;
-}
-
 
 .sidebar-trending{
     grid-template-rows: repeat(4, minmax(60px,75px));
