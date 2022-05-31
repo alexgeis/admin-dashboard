@@ -11,6 +11,7 @@
 body, html {
     height: 100%;
     margin: 0;
+    font-family: 'Plus Jakarta Sans', sans-serif;
   }
 
 .container {
@@ -88,7 +89,7 @@ DASHBOARD SECTION
     height: 30px;
     width: 24px;
     gap: 2px;
-    z-index: 100;
+    padding-right: 30px;
     grid-template-areas:
       "a a a b b b"
       "a a a b b b"
@@ -126,10 +127,14 @@ grid-area: d;
     filter: invert(100%) sepia(0%) saturate(7500%) hue-rotate(113deg) brightness(110%) contrast(101%)
 }
 
-menu
+.menu-item {
+    font-size: 1.2rem;
+}
 
 
-
+/* ~~
+CONTENT SECTION
+~~ */
 .main-content {
     background-color: var(--secondary-light);
 }
