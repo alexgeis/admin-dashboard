@@ -223,12 +223,12 @@ CONTENT SECTION
     padding: 10px;
 }
 
-.announcement,
+/* .announcement,
 .trend {
-    /* white-space: nowrap;
+    white-space: nowrap;
     overflow: hidden;
-    text-overflow: ellipsis; */
-}
+    text-overflow: ellipsis;
+} */
 .announcement>h4,
 .trend-user {
     font-size: .9rem;
@@ -236,6 +236,7 @@ CONTENT SECTION
 .announcement>p,
 .trend-desc {
     font-size: .7rem;
+    width: 25ch;
 }
 .announcement>hr {
     border: rgba(139, 92, 246,0.2) 1px solid;
